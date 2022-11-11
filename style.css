@@ -1,0 +1,114 @@
+/* 一般 */
+body { 
+    margin: 0; /* chromeで開いた時に出る周囲の余計な空白を消す */
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.menu li {
+    line-height: 50px;
+    color: white;
+    list-style: none;
+}
+
+/* main */
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 98%; /* 左右に1%ずつ空白を設ける */
+}
+
+.article {
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+.sidebar {
+    width: 27%; /* articleとの間に3%の余白を設ける */
+    margin-top: 15px;
+}
+
+/* article(left) */
+h1.article-title {
+    border-left: 5px solid black;
+    border-bottom: 1px solid black;
+}
+
+.date {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+p.article-text {
+    font-size: 14px;
+}
+
+img.bookstore {
+    width: 100%;
+}
+
+.img_box { /* img_box > content > img, p */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    background-color: lightgray;
+    padding: 25px 0 10px 0;
+    text-align: center;
+}
+
+.content {
+    margin-bottom: 5px;
+}
+
+.img_box img {
+    width: 200px;
+}
+
+.img_box p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+/* sidebar(right) */
+.sidebar h2 {
+    border-bottom: 1px dashed black;
+}
+
+.sidebar ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar li {
+    list-style: none;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+}
